@@ -15,6 +15,7 @@ exports[`renders correctly 1`] = `
         onChange={[Function]}
         placeholder="Search for..."
         type="text"
+        value=""
       />
       <span
         className="input-group-btn"
