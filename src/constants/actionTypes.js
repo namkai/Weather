@@ -8,4 +8,5 @@ export const WEATHER_CLEAR = 'WEATHER_CLEAR';
 
 
 // Input actionTypes
-export const USER_INPUT = 'USER_INPUT';
+export const UPDATE_QUERY = 'UPDATE_QUERY';
+

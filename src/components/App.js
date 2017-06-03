@@ -1,11 +1,11 @@
 import React from 'react';
-import Input from './Input';
 import '../style/App.css';
+import SearchBar from './SearchBar';
 
-const App = () => (
-	<div className="App">
-		<Input/>
-	</div>
+export const App = () => (
+  <div className="container">
+    <SearchBar />
+  </div>
 );
 
 export default App;

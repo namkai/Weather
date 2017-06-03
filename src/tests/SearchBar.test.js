@@ -1,14 +1,13 @@
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { App } from '../components/App';
+import { SearchBar } from '../components/SearchBar';
 
 it('renders correctly', () => {
-	const app = shallow(
-		<App>
+	const searchbar = shallow(
+		<SearchBar >
 			<strong>Hello World!</strong>
-		</App>,
+		</SearchBar>,
 	);
-	expect(toJson(app)).toMatchSnapshot();
+	expect(toJson(searchbar)).toMatchSnapshot();
 });
-
