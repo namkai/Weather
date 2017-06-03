@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux';
-import weather from '../reducers/weather_reducer';
 import input from '../reducers/input_reducer';
+import createStatusReducer from '../reducers/HOR/createStatusReducer';
 
-const rootReducer = combineReducers({ weather, input });
+const weather = createStatusReducer('current_weather');
+const forecast = createStatusReducer('forecast_weather')
+
+const rootReducer = combineReducers({ weather, forecast, input });
 
 export default rootReducer;
