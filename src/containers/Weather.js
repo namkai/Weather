@@ -1,22 +1,23 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
+import CurrentWeather from '../components/CurrentWeather';
 
-const Weather = ({ weather }) => {
-	const renderWeather = (cityData) => {
-
-	};
+export const Weather = ({ weather }) => {
+	console.log(weather, `i'm the weather!`)
 	return (
-		<div>Weather</div>
+		<div>
+			<CurrentWeather {...weather} />
+		</div>
 	);
 };
 
-//WeatherList.defaultProps = {
-//	weather: [],
-//};
-//
-//WeatherList.propTypes = {
-//	weather: PropTypes.arrayOf(PropTypes.object),
-//};
+Weather.defaultProps = {
+	weather: {},
+};
 
-export default connect(({ weather }) => ({ weather }))(Weather);
+Weather.propTypes = {
+	weather: PropTypes.object,
+};
+
+export default connect(({ weather, forecast }) => ({ weather, forecast }))(Weather);

@@ -1,23 +1,26 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { GoogleMap, GoogleMapLoader } from 'react-google-maps';
+import { Gmaps, Marker } from 'react-gmaps';
 
-const Map = ({ lat, lng }) => (
-  <GoogleMapLoader
-    containerElement={<div style={{ height: '100%' }} />}
-    googleMapElement={
-      <GoogleMap defaultZoom={12} defaultCenter={{ lat, lng }} />
-		}
-  />
-);
+const Map = ({ lat, lon }) => (
+  <div className="col-md-5">
+    <Gmaps
+      width={'100%'}
+      height={'400px'}
+      lat={lat}
+      lng={lon}
+      zoom={12}
+    ><Marker
+        lat={lat}
+        lng={lon}
+      />
+    </Gmaps>
+  </div>
+	);
 
-Map.defaultProps = {
-	lat: 37.7749,
-	lng: 122.4194,
-};
 
 Map.propTypes = {
 	lat: PropTypes.number,
-	lng: PropTypes.number,
+	lon: PropTypes.number,
 };
 export default Map;

@@ -6,7 +6,7 @@ import WeatherList from '../containers/Weather';
 export const App = () => (
   <div className="container">
     <SearchBar />
-	  <WeatherList/>
+	  <WeatherList />
   </div>
 );
 

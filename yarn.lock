@@ -1544,7 +1544,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.5.3:
+create-react-class@^15.5.2, create-react-class@^15.5.3:
   version "15.5.3"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.5.3.tgz#fb0f7cae79339e9a179e194ef466efa3923820fe"
   dependencies:
@@ -5059,6 +5059,13 @@ react-error-overlay@^1.0.7:
     react-dev-utils "^3.0.0"
     settle-promise "1.0.0"
     source-map "0.5.6"
+
+react-gmaps@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/react-gmaps/-/react-gmaps-1.6.0.tgz#ad96726f1519be2a5c825d6b3915a7d5c4f19600"
+  dependencies:
+    create-react-class "^15.5.2"
+    object-assign "^4.0.1"
 
 react-google-maps@^6.3.0:
   version "6.3.0"
