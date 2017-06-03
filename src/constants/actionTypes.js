@@ -1,7 +1,11 @@
-
+// Weather actionTypes
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 export const FETCH_WEATHER_PENDING = 'FETCH_WEATHER_PENDING';
 export const FETCH_WEATHER_SUCCESS = 'FETCH_WEATHER_SUCCESS';
 export const FETCH_WEATHER_FAILED = 'FETCH_WEATHER_FAILED';
 export const FETCH_WEATHER_ABORTED = 'FETCH_WEATHER_ABORTED';
 export const WEATHER_CLEAR = 'WEATHER_CLEAR';
+
+
+// Input actionTypes
+export const USER_INPUT = 'USER_INPUT';
