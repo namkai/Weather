@@ -18,38 +18,18 @@ const Sidebar = (props) => {
 				<div className="collapse nav-toggleable-md" id="nav-toggleable-md">
 					<SearchBar/>
 					<ul className="nav nav-pills nav-stacked flex-column">
-						<li className="nav-header">Dashboards</li>
+						<li className="nav-header">Recent Cities</li>
 						<li className="nav-item">
-							<a className="nav-link active" href="index.html">Overview</a>
+							<a className="nav-link" href="#">Overview</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link " href="order-history/index.html">Order history</a>
+							<a className="nav-link " href="#">Order history</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link "href="fluid/index.html">Fluid layout</a>
+							<a className="nav-link "href="#">Fluid layout</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link " href="icon-nav/index.html">Icon nav</a>
-						</li>
-
-						<li className="nav-header">More</li>
-						<li className="nav-item">
-							<a className="nav-link "href="docs/index.html">
-								Toolkit docs
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="http://getbootstrap.com" target="blank">
-								Bootstrap docs
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link " href="index-light/index.html">Light UI</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#docsModal" data-toggle="modal">
-								Example modal
-							</a>
+							<a className="nav-link " href="#">Icon nav</a>
 						</li>
 					</ul>
 					<hr className="visible-xs mt-3"/>

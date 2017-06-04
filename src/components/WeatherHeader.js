@@ -1,7 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
-const WeatherHeader = ({ city, description='Get Your weather' }) => (
+const WeatherHeader = ({ city, description = 'Get Your weather' }) => (
 	<div className="dashhead">
 		<div className="dashhead-titles">
 			<h2 className="dashhead-title">{city}</h2>
@@ -10,7 +10,7 @@ const WeatherHeader = ({ city, description='Get Your weather' }) => (
 
 		<div className="btn-toolbar dashhead-toolbar">
 			<div className="btn-toolbar-item input-with-icon">
-				<input type="text" value="01/01/15 - 01/08/15" className="form-control" data-provide="datepicker"/>
+				<input readOnly type="text" value={new Date()} className="form-control" data-provide="datepicker"/>
 				<span className="icon icon-calendar"/>
 			</div>
 		</div>
@@ -19,7 +19,12 @@ const WeatherHeader = ({ city, description='Get Your weather' }) => (
 
 WeatherHeader.defaultProps = {
 	city: 'Weather',
-	description: 'Get the weather in any city'
+	description: 'Get the weather in any city',
+};
+
+WeatherHeader.propTypes = {
+	city: PropTypes.string,
+	description: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default WeatherHeader;
