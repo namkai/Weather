@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import '../style/CurrentWeatherData.css'
 
 const CurrentWeatherData = ({ main, name, weather, wind, sys }) => (
       <div className="col-md-6">
-	      <div className="jumbotron jumbotron-fluid">
+	      <div className="jumbotron jumbotron-fluid" style={{padding: '1.2rem 1.5rem', textAlign: 'center'}}>
 		      <div className="container">
-			      <h1 className="display-5">{Math.floor(main.temp * 9 / 5 - 459.67)}</h1>
+			      <h1 className="display-5">{Math.floor(main.temp * 9 / 5 - 459.67)} &deg;F</h1>
 		      </div>
 	      </div>
         <table className="table table-inverse">
