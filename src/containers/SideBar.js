@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import * as actions from '../actions/index';
 import SearchBar from './SearchBar';
 import Cities from '../components/Cities';
 
-const Sidebar = ({ storedCities }) => {
+const Sidebar = ({ storedCities, fetchWeather }) => {
 	console.log(storedCities, `i'm the stored cities!`)
 	return (
 		<div className="col-md-3 sidebar">
@@ -19,7 +20,7 @@ const Sidebar = ({ storedCities }) => {
 
 				<div className="collapse nav-toggleable-md" id="nav-toggleable-md">
 					<SearchBar/>
-					<Cities storedCities={storedCities} />
+					<Cities storedCities={storedCities} fetchWeather={fetchWeather} />
 					<hr className="visible-xs mt-3"/>
 				</div>
 			</nav>
@@ -27,4 +28,4 @@ const Sidebar = ({ storedCities }) => {
 	);
 };
 
-export default connect(({ storedCities }) => ({ storedCities }))(Sidebar);
+export default connect(({ storedCities }) => ({ storedCities }), actions)(Sidebar);
