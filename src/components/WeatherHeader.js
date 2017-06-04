@@ -10,7 +10,7 @@ const WeatherHeader = ({ city, description = 'Get Your weather' }) => (
 
 		<div className="btn-toolbar dashhead-toolbar">
 			<div className="btn-toolbar-item input-with-icon">
-				<input readOnly type="text" value={new Date()} className="form-control" data-provide="datepicker"/>
+				<input readOnly type="text" value={`    ${new Date().toDateString()}`} className="form-control" data-provide="datepicker"/>
 				<span className="icon icon-calendar"/>
 			</div>
 		</div>

@@ -11,7 +11,7 @@ const Sidebar = (props) => {
 						<span className="sr-only">Toggle nav</span>
 					</button>
 					<a className="sidebar-brand img-responsive" href="index.html">
-						<span className="icon icon-drop sidebar-brand-icon"/>
+						<span style={{color: '#1ec8ff'}} className="icon icon-drop sidebar-brand-icon"/>
 					</a>
 				</div>
 
