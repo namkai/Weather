@@ -16,6 +16,8 @@ export const FETCH_FORECAST_WEATHER_ABORTED = 'FETCH_FORECAST_WEATHER_ABORTED';
 // Still deciding if this is necessary
 export const WEATHER_CLEAR = 'WEATHER_CLEAR';
 
+//
+export const UPDATE_STORED_CITIES = 'UPDATE_STORED_CITIES';
 
 // Input actionTypes
 export const UPDATE_QUERY = 'UPDATE_QUERY';
