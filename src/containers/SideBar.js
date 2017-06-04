@@ -29,6 +29,7 @@ export const SideBar = ({ storedCities, fetchWeather, updateQuery, input, update
           updateStoredCities={updateStoredCities}
         />
         <hr className="visible-xs mt-3" />
+
       </div>
     </nav>
   </div>

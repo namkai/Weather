@@ -25,11 +25,11 @@ const CurrentWeatherData = ({ main, wind, sys }) => (
 			</tr>
 			<tr>
 				<th scope="row"><span className="icon icon-light-up"/>  Sunrise</th>
-				<td>{`${new Date(sys.sunrise * 1000).getHours()} : ${new Date(sys.sunrise * 1000).getMinutes()} AM` }</td>
+				<td>{`${new Date(sys.sunrise * 1000).getHours()}:${new Date(sys.sunrise * 1000).getMinutes()} AM` }</td>
 			</tr>
 			<tr>
 				<th scope="row"><span className="icon icon-light-down"/>  Sunset</th>
-				<td>{`${new Date(sys.sunset * 1000).getHours() - 12} : ${new Date(sys.sunset * 1000).getMinutes()} PM`}</td>
+				<td>{`${new Date(sys.sunset * 1000).getHours() - 12}:${new Date(sys.sunset * 1000).getMinutes()} PM`}</td>
 			</tr>
 			</tbody>
 		</table>
