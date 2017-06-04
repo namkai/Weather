@@ -9,7 +9,7 @@ const SearchBar = ({ input, updateQuery, fetchWeather }) => {
 	return (
   <form onSubmit={searchForWeather} className="sidebar-form">
     <input
-      placeholder="Search for a Cit"
+      placeholder="Search for a City"
       className="form-control"
       value={input}
       onChange={e => updateQuery(e.target.value)}
