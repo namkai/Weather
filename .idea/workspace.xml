@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c90374d-271d-4d54-867e-f666cb2c683d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/SearchBar.js" afterPath="$PROJECT_DIR$/src/components/SearchBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CurrentWeatherData.js" afterPath="$PROJECT_DIR$/src/components/CurrentWeatherData.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchBar.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchBar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SearchBar.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
@@ -111,12 +111,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeatherData.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CurrentWeatherData.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CurrentWeatherData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="666">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+              <folding>
+                <marker date="1496562589000" expanded="true" signature="889:1043" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/tests/City.js" />
         <option value="$PROJECT_DIR$/src/tests/CurrentWeather.test.js" />
         <option value="$PROJECT_DIR$/src/tests/CurrentWeatherData.test.js" />
-        <option value="$PROJECT_DIR$/src/components/CurrentWeatherData.js" />
         <option value="$PROJECT_DIR$/src/tests/GoogleMap.test.js" />
         <option value="$PROJECT_DIR$/src/tests/SearchBar.test.js" />
         <option value="$PROJECT_DIR$/src/tests/SideBar.test.js" />
@@ -186,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/containers/SideBar.js" />
         <option value="$PROJECT_DIR$/src/components/Cities.js" />
         <option value="$PROJECT_DIR$/src/components/SearchBar.js" />
+        <option value="$PROJECT_DIR$/src/components/CurrentWeatherData.js" />
       </list>
     </option>
   </component>
@@ -475,12 +477,12 @@
       <option name="presentableId" value="Default" />
       <updated>1496450081173</updated>
       <workItem from="1496450082343" duration="31322000" />
-      <workItem from="1496545788554" duration="9184000" />
+      <workItem from="1496545788554" duration="9980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40506000" />
+    <option name="totallyTimeSpent" value="41302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -823,22 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CurrentWeather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CurrentWeatherData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -904,6 +890,24 @@
         <state relative-caret-position="432">
           <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CurrentWeather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CurrentWeatherData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <marker date="1496562589000" expanded="true" signature="889:1043" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
