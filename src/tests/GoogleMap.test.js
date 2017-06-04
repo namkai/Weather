@@ -1,10 +1,9 @@
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { App } from '../components/App';
+import Map from '../components/GoogleMap';
 
 it('renders correctly', () => {
-	const app = shallow(<App />);
-	expect(toJson(app)).toMatchSnapshot();
+	const map = shallow(<Map />);
+	expect(toJson(map)).toMatchSnapshot();
 });
-

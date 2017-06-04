@@ -4,6 +4,11 @@ exports[`renders correctly 1`] = `
 <div
   className="container"
 >
-  <Connect(Component) />
+  <div
+    className="row"
+  >
+    <Connect(Component) />
+    <Connect(Component) />
+  </div>
 </div>
 `;

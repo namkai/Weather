@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="col-md-6"
+>
+  <div
+    className="jumbotron jumbotron-fluid"
+    style={
+      Object {
+        "padding": "1.2rem 1.5rem",
+        "textAlign": "center",
+      }
+    }
+  >
+    <div
+      className="container"
+    >
+      <h1
+        className="display-5"
+      >
+        NaN
+         °F
+      </h1>
+    </div>
+  </div>
+  <table
+    className="table table-inverse"
+  >
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          Humidity
+        </th>
+        <td>
+          %
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          Pressure
+        </th>
+        <td />
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          Wind Speed
+        </th>
+        <td>
+           mph
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          Sunrise
+        </th>
+        <td />
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          Sunset
+        </th>
+        <td />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

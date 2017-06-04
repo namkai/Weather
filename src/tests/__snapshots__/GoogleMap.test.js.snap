@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="col-md-6"
+>
+  <Component
+    height="350px"
+    width="100%"
+    zoom={12}
+  >
+    <Component />
+  </Component>
+</div>
+`;

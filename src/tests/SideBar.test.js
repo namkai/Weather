@@ -1,10 +1,9 @@
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { App } from '../components/App';
+import { SideBar } from '../containers/SideBar';
 
 it('renders correctly', () => {
-	const app = shallow(<App />);
-	expect(toJson(app)).toMatchSnapshot();
+	const sidebar = shallow(<SideBar />);
+	expect(toJson(sidebar)).toMatchSnapshot();
 });
-

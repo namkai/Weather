@@ -1,34 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  className="row"
+<form
+  className="sidebar-form"
+  onSubmit={[Function]}
 >
-  <div
-    className="col-lg-6"
+  <input
+    className="form-control"
+    onChange={[Function]}
+    placeholder="Search for a Cit"
+    value=""
+  />
+  <button
+    className="btn-link"
+    type="submit"
   >
-    <div
-      className="input-group"
-    >
-      <input
-        className="form-control"
-        onChange={[Function]}
-        placeholder="Search for..."
-        type="text"
-        value=""
-      />
-      <span
-        className="input-group-btn"
-      >
-        <button
-          className="btn btn-default"
-          onClick={[Function]}
-          type="button"
-        >
-          Get Weather!
-        </button>
-      </span>
-    </div>
-  </div>
-</div>
+    <span
+      className="icon icon-magnifying-glass"
+    />
+  </button>
+</form>
 `;

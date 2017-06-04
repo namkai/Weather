@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="dashhead"
+>
+  <div
+    className="dashhead-titles"
+  >
+    <h2
+      className="dashhead-title"
+    >
+      Weather
+    </h2>
+    <h6
+      className="dashhead-subtitle"
+    />
+  </div>
+  <div
+    className="btn-toolbar dashhead-toolbar"
+  >
+    <div
+      className="btn-toolbar-item input-with-icon"
+    >
+      <input
+        className="form-control"
+        data-provide="datepicker"
+        readOnly={true}
+        type="text"
+        value="    Sat Jun 03 2017"
+      />
+      <span
+        className="icon icon-calendar"
+      />
+    </div>
+  </div>
+</div>
+`;

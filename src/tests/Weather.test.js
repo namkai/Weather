@@ -1,10 +1,9 @@
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { App } from '../components/App';
+import { Weather } from '../containers/Weather';
 
 it('renders correctly', () => {
-	const app = shallow(<App />);
-	expect(toJson(app)).toMatchSnapshot();
+	const weather = shallow(<Weather />);
+	expect(toJson(weather)).toMatchSnapshot();
 });
-
