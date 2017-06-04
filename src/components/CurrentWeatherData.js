@@ -10,25 +10,25 @@ const CurrentWeatherData = ({ main, wind, sys }) => (
 			</div>
 		</div>
 		<table className="table table-inverse">
-			<tbody>
+			<tbody style={{ textAlign: 'right'}}>
 			<tr>
-				<th scope="row">Humidity</th>
+				<th scope="row"><i className="fa fa-cloud" aria-hidden="true" />  Humidity</th>
 				<td>{main.humidity}%</td>
 			</tr>
 			<tr>
-				<th scope="row">Pressure</th>
-				<td>{main.pressure}</td>
+				<th scope="row"><span className="icon icon-thermometer" />  Pressure</th>
+				<td>{main.pressure} mb</td>
 			</tr>
 			<tr>
-				<th scope="row">Wind Speed</th>
+				<th scope="row"><span className="icon icon-air" />  Wind Speed</th>
 				<td>{wind.speed} mph</td>
 			</tr>
 			<tr>
-				<th scope="row">Sunrise</th>
+				<th scope="row"><span className="icon icon-light-up"/>  Sunrise</th>
 				<td>{`${new Date(sys.sunrise * 1000).getHours()} : ${new Date(sys.sunrise * 1000).getMinutes()} AM` }</td>
 			</tr>
 			<tr>
-				<th scope="row">Sunset</th>
+				<th scope="row"><span className="icon icon-light-down"/>  Sunset</th>
 				<td>{`${new Date(sys.sunset * 1000).getHours() - 12} : ${new Date(sys.sunset * 1000).getMinutes()} PM`}</td>
 			</tr>
 			</tbody>
