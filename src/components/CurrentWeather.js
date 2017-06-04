@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import '../style/Loader.css';
+
 import CurrentWeatherData from './CurrentWeatherData';
 import Map from './GoogleMap';
 
 const CurrentWeather = (props) => {
-	console.log(props)
+	console.log(props.coords, `i'm the coords!`)
 	if (props.coord === undefined) {
 		return (
 			<div />

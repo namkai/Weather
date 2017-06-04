@@ -9,17 +9,17 @@ export const SearchBar = ({ input, updateQuery, fetchWeather }) => {
 		fetchWeather(input);
 	};
 	return (
-    <form onSubmit={searchForWeather} className="input-group">
-      <input
-        placeholder="Get a five-day forecast in your favorite cities"
-        className="form-control"
-        value={input}
-        onChange={e => updateQuery(e.target.value)}
-      />
-      <span className="input-group-btn">
-        <button type="submit" className="btn btn-secondary">Submit</button>
-      </span>
-    </form>
+  <form onSubmit={searchForWeather} className="sidebar-form">
+    <input
+      placeholder="Search for weather"
+      className="form-control"
+      value={input}
+      onChange={e => updateQuery(e.target.value)}
+    />
+    <button type="submit" className="btn-link">
+      <span className="icon icon-magnifying-glass" />
+    </button>
+  </form>
 	);
 };
 

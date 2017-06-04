@@ -2,24 +2,37 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const CurrentWeatherData = ({ main, name, weather, wind, sys }) => (
-  <div className="col-md-7">
-    <div className="row">
       <div className="col-md-6">
-        <h2>{name}</h2>
-        <hr />
-        <h4>Current conditions</h4>
-        <ul>
-          <li>Temp: {Math.floor(main.temp * 9 / 5 - 459.67)}</li>
-          <li>Humidity: {main.humidity}%</li>
-          <li>Pressure: {main.pressure}</li>
-          <li>Wind Speed: {wind.speed} mph</li>
-          <li>Today the weather is mostly {weather[0].description}.</li>
-          <li>Sunrise is at: {sys.sunrise}</li>
-          <li>Sunset is at: {sys.sunset}</li>
-        </ul>
+	      <div className="jumbotron jumbotron-fluid">
+		      <div className="container">
+			      <h1 className="display-5">{Math.floor(main.temp * 9 / 5 - 459.67)}</h1>
+		      </div>
+	      </div>
+        <table className="table table-inverse">
+          <tbody>
+            <tr>
+              <th scope="row">Humidity</th>
+              <td>{main.humidity}%</td>
+            </tr>
+            <tr>
+              <th scope="row">Pressure</th>
+              <td>{main.pressure}</td>
+            </tr>
+            <tr>
+              <th scope="row">Wind Speed</th>
+              <td>{wind.speed} mph</td>
+            </tr>
+            <tr>
+              <th scope="row">Sunrise</th>
+              <td>{sys.sunrise}</td>
+            </tr>
+            <tr>
+              <th scope="row">Sunset</th>
+              <td>{sys.sunset}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </div>
-  </div>
 );
 
 CurrentWeatherData.defaultProps = {
