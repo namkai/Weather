@@ -18,14 +18,11 @@ class Chart extends Component {
 		this.updateChart();
 	}
 
-	setBarChart = (event) => {
-		console.log(event.target.default)
-		event.preventDefault()
+	setBarChart = () => {
 		this.setState({ chartType: 'bar' });
 	};
 
-	setLineChart = (event) => {
-		event.preventDefault()
+	setLineChart = () => {
 		this.setState({ chartType: 'line' });
 	};
 	updateChart = () => {

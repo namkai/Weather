@@ -1,25 +1,40 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { Component } from 'react';
 
-const SearchBar = ({ input, updateQuery, fetchWeather }) => {
-	const searchForWeather = (e) => {
-		e.preventDefault();
-		fetchWeather(input);
+class SearchBar extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			query: '',
+		};
+	}
+
+	updateQuery = (query) => {
+		this.setState(() => ({ query }));
 	};
-	return (
-  <form onSubmit={searchForWeather} className="sidebar-form">
-    <input
-      placeholder="Search for a City"
-      className="form-control"
-      value={input}
-      onChange={e => updateQuery(e.target.value)}
-    />
-    <button type="submit" className="btn-link">
-      <span className="icon icon-magnifying-glass" />
-    </button>
-  </form>
-	);
-};
+	searchForWeather = (e) => {
+		e.preventDefault();
+		this.props.fetchWeather(this.state.query);
+		this.setState(() => ({ query: '' }));
+	};
+
+	render() {
+		return (
+			<form onSubmit={this.searchForWeather} className="sidebar-form">
+				<input
+					placeholder="Search for a City"
+					className="form-control"
+					value={this.state.query}
+					onChange={e => this.updateQuery(e.target.value)}
+				/>
+				<button type="submit" className="btn-link">
+					<span className="icon icon-magnifying-glass"/>
+				</button>
+			</form>
+		);
+	}
+}
+;
 
 SearchBar.defaultProps = {
 	input: '',

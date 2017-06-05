@@ -8,17 +8,17 @@ import Map from './GoogleMap';
 const CurrentWeather = (props) => {
 	if (props.coord === undefined) {
 		return (
-			<div />
+  <div />
 		);
 	}
 	if (props.status === 'pending') {
-		return <div className="loader"/>;
+		return <div className="loader" />;
 	}
 	return (
-		<div className="row">
-			<CurrentWeatherData {...props} />
-			<Map {...props.coord} />
-		</div>
+  <div className="row">
+    <CurrentWeatherData {...props} />
+    <Map {...props.coord} />
+  </div>
 	);
 };
 

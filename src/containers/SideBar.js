@@ -11,10 +11,11 @@ export const SideBar = ({ storedCities, fetchWeather, updateQuery, input, update
     <nav className="sidebar-nav">
       <div className="sidebar-header">
         <button
-          className="nav-toggler nav-toggler-md sidebar-toggler" type="button" data-toggle="collapse"
+          className="nav-toggler nav-toggler-md sidebar-toggler"
+          type="button"
+          data-toggle="collapse"
           data-target="#nav-toggleable-md"
-        >
-          <span className="sr-only">Toggle nav</span>
+        ><span className="sr-only">Toggle nav</span>
         </button>
         <a className="sidebar-brand img-responsive" href="#">
           <span style={{ color: '#1ec8ff' }} className="icon icon-drop sidebar-brand-icon" />
@@ -22,7 +23,7 @@ export const SideBar = ({ storedCities, fetchWeather, updateQuery, input, update
       </div>
 
       <div className="collapse nav-toggleable-md" id="nav-toggleable-md">
-        <SearchBar updateQuery={updateQuery} fetchWeather={fetchWeather} input={input} />
+        <SearchBar fetchWeather={fetchWeather} />
         <Cities
           storedCities={storedCities}
           fetchWeather={fetchWeather}
@@ -50,9 +51,6 @@ SideBar.propTypes = {
 	input: PropTypes.string,
 };
 
-const mapStateToProps = state => ({
-	storedCities: citySelector(state),
-	input: state.input,
-});
+const mapStateToProps = state => ({ storedCities: citySelector(state)});
 
 export default connect(mapStateToProps, actions)(SideBar);
