@@ -11,7 +11,7 @@ export const FETCH_FORECAST_WEATHER_SUCCESS = 'FETCH_FORECAST_WEATHER_SUCCESS';
 export const FETCH_FORECAST_WEATHER_FAILED = 'FETCH_FORECAST_WEATHER_FAILED';
 export const FETCH_FORECAST_WEATHER_ABORTED = 'FETCH_FORECAST_WEATHER_ABORTED';
 
-//Gets rid of all stored cities as well as the ones in local storage
+// Gets rid of all stored cities as well as the ones in local storage
 export const CLEAR_STORED_CITIES = 'CLEAR_STORED_CITIES';
 
 // Adds a city to the current list of stored cities

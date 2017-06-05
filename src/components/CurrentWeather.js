@@ -10,9 +10,6 @@ const CurrentWeather = (props) => {
   <div />
 		);
 	}
-	if (props.status === 'pending') {
-		return <div className="loader" />;
-	}
 	return (
   <div className="row">
     <CurrentWeatherData {...props} />
@@ -22,7 +19,7 @@ const CurrentWeather = (props) => {
 };
 
 CurrentWeather.propTypes = {
-	coord: PropTypes.objectOf(PropTypes.object),
+	coord: PropTypes.objectOf(PropTypes.number),
 };
 
 export default CurrentWeather;

@@ -5,7 +5,7 @@ const WeatherHeader = ({ city, description }) => (
   <div className="dashhead">
     <div className="dashhead-titles">
       <h2 className="dashhead-title">{city}</h2>
-      <h6 className="dashhead-subtitle" style={{ color: '#00BCD4' }}>Current conditions: {description[0].description}</h6>
+      <h6 className="dashhead-subtitle" style={{ color: '#00BCD4' }}>{description[0].description}</h6>
     </div>
 
     <div className="btn-toolbar dashhead-toolbar">
