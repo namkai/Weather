@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c90374d-271d-4d54-867e-f666cb2c683d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Chart.js" afterPath="$PROJECT_DIR$/src/components/Chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/epics/currentWeatherEpic.js" afterPath="$PROJECT_DIR$/src/epics/currentWeatherEpic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/epics/forecastWeatherEpic.js" afterPath="$PROJECT_DIR$/src/epics/forecastWeatherEpic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/HOR/createStatusReducer.js" afterPath="$PROJECT_DIR$/src/reducers/HOR/createStatusReducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/Chart.css" afterPath="$PROJECT_DIR$/src/style/Chart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/WeatherHeader.js" afterPath="$PROJECT_DIR$/src/components/WeatherHeader.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chart.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Chart.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style/Chart.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
@@ -56,15 +49,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeatherData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/CurrentWeatherData.js">
+      <file leaf-file-name="WeatherHeader.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/WeatherHeader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="81" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="81" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1496593214000" expanded="true" signature="1090:1284" ph="..." />
-              </folding>
+            <state relative-caret-position="432">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="25" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/containers/Sidebar.js" />
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/style/CurrentWeatherData.css" />
-        <option value="$PROJECT_DIR$/src/components/WeatherHeader.js" />
         <option value="$PROJECT_DIR$/src/constants/api.js" />
         <option value="$PROJECT_DIR$/src/roots/rootReducer.js" />
         <option value="$PROJECT_DIR$/src/components/City.js" />
@@ -202,6 +191,7 @@
         <option value="$PROJECT_DIR$/src/epics/currentWeatherEpic.js" />
         <option value="$PROJECT_DIR$/src/components/Chart.js" />
         <option value="$PROJECT_DIR$/src/style/Chart.css" />
+        <option value="$PROJECT_DIR$/src/components/WeatherHeader.js" />
       </list>
     </option>
   </component>
@@ -576,12 +566,12 @@
       <option name="presentableId" value="Default" />
       <updated>1496450081173</updated>
       <workItem from="1496450082343" duration="31322000" />
-      <workItem from="1496545788554" duration="28755000" />
+      <workItem from="1496545788554" duration="29285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60077000" />
+    <option name="totallyTimeSpent" value="60607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -752,14 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/WeatherHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1043,6 +1025,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/WeatherHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="25" selection-end-column="27" />
           <folding />
         </state>
       </provider>
