@@ -1,8 +1,7 @@
-#chart .c3-axis-y text {
-	fill: #00d1ff;
-	font-size:12px;
+.c3 path, .c3 line, .tick text {
+	stroke: #6dacba;
 }
-#chart .c3-axis-x text {
-	font-size:12px;
-	fill:white;
+.c3-legend-item {
+	font-size: 12px;
+	fill: white;
 }

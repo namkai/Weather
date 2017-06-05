@@ -14,6 +14,5 @@ const forecastWeatherEpic = action$ =>
 			.map(temp => ({ type: type.FETCH_FORECAST_WEATHER_SUCCESS, response: temp }))
 			.takeUntil(action$.ofType(type.FETCH_FORECAST_WEATHER_ABORTED))
 			.catch(error => Observable.of({ type: type.FETCH_FORECAST_WEATHER_FAILED, error })))
-//			.startWith({ type: type.FETCH_FORECAST_WEATHER_PENDING }));
 
 export default forecastWeatherEpic;
