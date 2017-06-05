@@ -1,5 +1,6 @@
 import c3 from 'c3';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../style/Chart.css';
 
 class Chart extends Component {
@@ -80,6 +81,10 @@ class Chart extends Component {
 			</div>
 		);
 	}
+}
+
+Chart.propTyes = {
+	forecast: PropTypes.arrayOf(PropTypes.array)
 }
 
 export default Chart;

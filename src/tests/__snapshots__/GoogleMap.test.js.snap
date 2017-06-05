@@ -6,10 +6,10 @@ exports[`renders correctly 1`] = `
 >
   <Component
     height="350px"
+    lat={1}
+    lng={2}
     width="100%"
     zoom={12}
-  >
-    <Component />
-  </Component>
+  />
 </div>
 `;

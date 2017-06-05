@@ -14,7 +14,14 @@ exports[`renders correctly 1`] = `
     </h2>
     <h6
       className="dashhead-subtitle"
-    />
+      style={
+        Object {
+          "color": "#00BCD4",
+        }
+      }
+    >
+      Current conditions: 
+    </h6>
   </div>
   <div
     className="btn-toolbar dashhead-toolbar"
@@ -27,7 +34,7 @@ exports[`renders correctly 1`] = `
         data-provide="datepicker"
         readOnly={true}
         type="text"
-        value="    Sat Jun 03 2017"
+        value="    Mon Jun 05 2017"
       />
       <span
         className="icon icon-calendar"

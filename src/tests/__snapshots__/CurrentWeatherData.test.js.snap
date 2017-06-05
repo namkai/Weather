@@ -27,12 +27,22 @@ exports[`renders correctly 1`] = `
   <table
     className="table table-inverse"
   >
-    <tbody>
+    <tbody
+      style={
+        Object {
+          "textAlign": "right",
+        }
+      }
+    >
       <tr>
         <th
           scope="row"
         >
-          Humidity
+          <i
+            aria-hidden="true"
+            className="fa fa-cloud"
+          />
+            Humidity
         </th>
         <td>
           %
@@ -42,15 +52,23 @@ exports[`renders correctly 1`] = `
         <th
           scope="row"
         >
-          Pressure
+          <span
+            className="icon icon-thermometer"
+          />
+            Pressure
         </th>
-        <td />
+        <td>
+           mb
+        </td>
       </tr>
       <tr>
         <th
           scope="row"
         >
-          Wind Speed
+          <span
+            className="icon icon-air"
+          />
+            Wind Speed
         </th>
         <td>
            mph
@@ -60,17 +78,27 @@ exports[`renders correctly 1`] = `
         <th
           scope="row"
         >
-          Sunrise
+          <span
+            className="icon icon-light-up"
+          />
+            Sunrise
         </th>
-        <td />
+        <td>
+          NaN:NaN AM
+        </td>
       </tr>
       <tr>
         <th
           scope="row"
         >
-          Sunset
+          <span
+            className="icon icon-light-down"
+          />
+            Sunset
         </th>
-        <td />
+        <td>
+          NaN:NaN PM
+        </td>
       </tr>
     </tbody>
   </table>
