@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import '../style/Loader.css';
 
 import CurrentWeatherData from './CurrentWeatherData';
-import Map from './GoogleMap';
+import Map from './Map';
 
 const CurrentWeather = (props) => {
 	if (props.coord === undefined) {

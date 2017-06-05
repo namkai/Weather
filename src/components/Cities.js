@@ -5,10 +5,8 @@ import City from './City';
 class Cities extends Component {
 	componentWillMount() {
 		let cities = localStorage.getItem('storedCities');
-		console.log(cities, `i'm the cities!`)
 		if (cities !== null && cities !== '') {
 			cities = cities.split('&');
-			console.log(cities, `i'm the cities!`)
 			this.props.updateStoredCities(cities);
 		}
 	}
@@ -18,9 +16,8 @@ class Cities extends Component {
 		localStorage.setItem('storedCities', stringCities);
 	}
 
-	cityList = () => this.props.storedCities.map(city => <City name={city} fetchWeather={this.props.fetchWeather}/>);
+	cityList = () => this.props.storedCities.map((city, idx) => <City name={city} key={idx} fetchWeather={this.props.fetchWeather}/>);
 	render() {
-		console.log(`i'm the storedCities after the reducers!`, this.props.storedCity)
 		return (
 			<ul className="nav nav-pills nav-stacked flex-column">
 				<li className="nav-header">Recent Cities <small>· <a href="#" onClick={this.props.clearStoredCities}>Clear</a></small></li>
@@ -36,7 +33,7 @@ Cities.defaultProps = {
 };
 
 Cities.propTypes = {
-	storedCities: PropTypes.arrayOf(PropTypes.object),
+	storedCities: PropTypes.arrayOf(PropTypes.string),
 	fetchWeather: PropTypes.func,
 };
 

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import '../style/CurrentWeatherData.css';
 
 const CurrentWeatherData = ({ main, wind, sys }) => (
   <div className="col-md-6">

@@ -38,17 +38,13 @@ export const SideBar = ({ storedCities, fetchWeather, updateQuery, input, update
 	);
 
 SideBar.defaultProps = {
-	storedCities: PropTypes.arrayOf(PropTypes.object),
+	storedCities: PropTypes.arrayOf(PropTypes.string, PropTypes.object),
 	fetchWeather: PropTypes.func,
-	updateQuery: PropTypes.func,
-	input: PropTypes.string,
 };
 
 SideBar.propTypes = {
-	storedCities: PropTypes.arrayOf(PropTypes.object),
+	storedCities: PropTypes.arrayOf(PropTypes.string, PropTypes.object),
 	fetchWeather: PropTypes.func,
-	updateQuery: PropTypes.func,
-	input: PropTypes.string,
 };
 
 const mapStateToProps = state => ({ storedCities: citySelector(state)});

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const WeatherHeader = ({ city, description = 'Get Your weather' }) => (
+const WeatherHeader = ({ city, description }) => (
   <div className="dashhead">
     <div className="dashhead-titles">
       <h2 className="dashhead-title">{city}</h2>
@@ -24,7 +24,7 @@ WeatherHeader.defaultProps = {
 
 WeatherHeader.propTypes = {
 	city: PropTypes.string,
-	description: PropTypes.arrayOf(PropTypes.object),
+	description: PropTypes.array,
 };
 
 export default WeatherHeader;

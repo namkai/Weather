@@ -7,10 +7,9 @@ import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 import configureStore from './store';
-import './style/index.css';
 import './style/v4/docs/assets/css/application.css';
-import './style/v4/docs/assets/css/toolkit-inverse.css';
-
+import './style/v4/dist/toolkit-inverse.css';
+import './style/v4/docs/assets/css/docs.css';
 
 const store = configureStore();
 

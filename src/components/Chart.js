@@ -26,7 +26,7 @@ class Chart extends Component {
 		this.setState({ chartType: 'line' });
 	};
 	updateChart = () => {
-		const chart = c3.generate({
+		c3.generate({
 			bindto: '#chart',
 			data: {
 				x: 'x',
@@ -67,7 +67,7 @@ class Chart extends Component {
 	render() {
 		if (this.props.forecast[0].length === 0) {
 			return (
-				<div></div>
+				<div/>
 			);
 		}
 		return (

@@ -3,20 +3,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 import CurrentWeather from '../components/CurrentWeather';
 import WeatherHeader from '../components/WeatherHeader';
-import Forecast from './Forecast';
+import selectedForecast from '../selectors/selected_forecast';
+import Forecast from '../components/Forecast';
 
-export const Weather = ({ weather, forecast }) => {
-	console.log(weather, 'i\'m the weather');
-	console.log(forecast, 'i\'m the forecast!');
-	return (
+export const Weather = ({ weather, forecast }) => (
   <div className="col-md-9 content">
     <WeatherHeader city={weather.name} description={weather.weather} />
     <hr className="mt-3" />
     <CurrentWeather {...weather} />
     <Forecast forecast={forecast} />
   </div>
-	);
-};
+);
 
 Weather.defaultProps = {
 	weather: {},
@@ -27,8 +24,13 @@ Weather.defaultProps = {
 
 Weather.propTypes = {
 	weather: PropTypes.object,
-	forecast: PropTypes.objectOf(PropTypes.array)
+	forecast: PropTypes.arrayOf(PropTypes.array),
 };
 
+const mapStateToProps = state => ({
+	weather: state.weather,
+	forecast: selectedForecast(state),
+});
 
-export default connect(({ weather }) => ({ weather }))(Weather);
+
+export default connect(mapStateToProps)(Weather);
