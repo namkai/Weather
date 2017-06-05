@@ -12,5 +12,8 @@ export const clearWeather = () => ({ type: type.WEATHER_CLEAR });
 // Updates the users weather query
 export const updateQuery = payload => ({ type: type.UPDATE_QUERY, payload });
 
+// Clears the stored cities reducer as well as local storage
+export const clearStoredCities = () => ({ type: type.CLEAR_STORED_CITIES });
+
 // Grabs recent searches stored in local storage and updates the storedReducer
-export const updateStoredCities = response => ({ type: type.UPDATE_STORED_CITIES, response })
+export const updateStoredCities = response => ({ type: type.UPDATE_STORED_CITIES, response });

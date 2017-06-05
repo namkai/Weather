@@ -18,14 +18,16 @@ class Chart extends Component {
 		this.updateChart();
 	}
 
-	setBarChart = () => {
+	setBarChart = (event) => {
+		console.log(event.target.default)
+		event.preventDefault()
 		this.setState({ chartType: 'bar' });
 	};
 
-	setLineChart = () => {
+	setLineChart = (event) => {
+		event.preventDefault()
 		this.setState({ chartType: 'line' });
 	};
-
 	updateChart = () => {
 		const chart = c3.generate({
 			bindto: '#chart',
@@ -33,7 +35,6 @@ class Chart extends Component {
 				x: 'x',
 				columns: [
 					['x', ...this.props.forecast[1]],
-//            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
 					['Temperature', ...this.props.forecast[0]],
 				],
 				colors: {

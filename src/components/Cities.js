@@ -23,7 +23,7 @@ class Cities extends Component {
 		console.log(`i'm the storedCities after the reducers!`, this.props.storedCity)
 		return (
 			<ul className="nav nav-pills nav-stacked flex-column">
-				<li className="nav-header">Recent Cities</li>
+				<li className="nav-header">Recent Cities <small>· <a href="#" onClick={this.props.clearStoredCities}>Clear</a></small></li>
 				{this.cityList()}
 			</ul>
 		);

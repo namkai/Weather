@@ -6,7 +6,7 @@ import Cities from '../components/Cities';
 import SearchBar from '../components/SearchBar';
 import citySelector from '../selectors/selected_stored_cities';
 
-export const SideBar = ({ storedCities, fetchWeather, updateQuery, input, updateStoredCities }) => (
+export const SideBar = ({ storedCities, fetchWeather, updateQuery, input, updateStoredCities, clearStoredCities }) => (
   <div className="col-md-3 sidebar">
     <nav className="sidebar-nav">
       <div className="sidebar-header">
@@ -27,6 +27,7 @@ export const SideBar = ({ storedCities, fetchWeather, updateQuery, input, update
           storedCities={storedCities}
           fetchWeather={fetchWeather}
           updateStoredCities={updateStoredCities}
+          clearStoredCities={clearStoredCities}
         />
         <hr className="visible-xs mt-3" />
 
