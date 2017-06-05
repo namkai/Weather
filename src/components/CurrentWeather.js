@@ -6,7 +6,6 @@ import CurrentWeatherData from './CurrentWeatherData';
 import Map from './GoogleMap';
 
 const CurrentWeather = (props) => {
-	console.log(props.coords, `i'm the coords!`)
 	if (props.coord === undefined) {
 		return (
 			<div />

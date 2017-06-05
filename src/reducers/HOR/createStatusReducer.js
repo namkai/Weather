@@ -1,6 +1,7 @@
 function createStatusReducer(actionName = '') {
 	actionName = actionName.toUpperCase();
-	return (state = {}, action) => {
+	return (state = [], action) => {
+		console.log(`i'm the action!`, action)
 		switch (action.type) {
 		case `FETCH_${actionName}_PENDING`:
 			return {status: 'pending'};

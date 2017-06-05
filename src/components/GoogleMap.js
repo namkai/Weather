@@ -11,16 +11,20 @@ const Map = ({ lat, lon }) => (
       lng={lon}
       zoom={12}
     ><Marker
-        lat={lat}
-        lng={lon}
-      />
+      lat={lat}
+      lng={lon}
+    />
     </Gmaps>
   </div>
-	);
+);
 
+Map.defaultProps = {
+	lat: 1,
+	lon: 2,
+};
 
-//Map.propTypes = {
-//	lat: PropTypes.number,
-//	lon: PropTypes.number,
-//};
+Map.propTypes = {
+	lat: PropTypes.number,
+	lon: PropTypes.number,
+};
 export default Map;

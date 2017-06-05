@@ -4,7 +4,7 @@ import { createSelector } from 'reselect';
 const storedCities = state => state.storedCities;
 
 // Filters the stored based on selectedTab as well as the current query
-const getCities = stored => [...new Set(stored.map(a => a))].reverse();
+const getCities = stored => [...new Set(stored.map(a => a))];
 
 export default createSelector(
 	storedCities,

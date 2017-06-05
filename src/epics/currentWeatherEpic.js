@@ -12,7 +12,7 @@ const currentWeatherEpic = action$ =>
 		})
 			.map(({ response }) => ({ type: type.FETCH_CURRENT_WEATHER_SUCCESS, response }))
 			.takeUntil(action$.ofType(type.FETCH_CURRENT_WEATHER_ABORTED))
-			.catch(error => Observable.of({ type: type.FETCH_CURRENT_WEATHER_FAILED, error }))
-			.startWith({ type: type.FETCH_CURRENT_WEATHER_PENDING }));
+			.catch(error => Observable.of({ type: type.FETCH_CURRENT_WEATHER_FAILED, error })))
+//			.startWith({ type: type.FETCH_CURRENT_WEATHER_PENDING }));
 
 export default currentWeatherEpic;

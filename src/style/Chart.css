@@ -1,0 +1,8 @@
+#chart .c3-axis-y text {
+	fill: #00d1ff;
+	font-size:12px;
+}
+#chart .c3-axis-x text {
+	font-size:12px;
+	fill:white;
+}
