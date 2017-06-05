@@ -18,7 +18,7 @@ const WeatherHeader = ({ city, description }) => (
 );
 
 WeatherHeader.defaultProps = {
-	city: 'Weather',
+	city: 'Search for a City',
 	description: 'Get the weather in any city',
 };
 
