@@ -9,7 +9,7 @@ import currentWeatherEpic from './currentWeatherEpic';
 const epicMiddleware = createEpicMiddleware(currentWeatherEpic);
 const mockStore = configureMockStore([epicMiddleware]);
 
-describe('fetchUserEpic', () => {
+describe('fetch forecast epic', () => {
   let store;
   beforeEach(() => {
     store = mockStore();
