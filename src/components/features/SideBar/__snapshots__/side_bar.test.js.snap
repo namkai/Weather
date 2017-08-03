@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<SideBarLayout
+  searchBar={
+    <withState(withHandlers(pure(SearchBar)))
+      fetchWeather={[Function]}
+    />
+  }
+>
+  <lifecycle(pure(Cities))
+    clearStoredCities={[Function]}
+    fetchWeather={[Function]}
+    storedCities={[Function]}
+    updateStoredCities={[Function]}
+  />
+</SideBarLayout>
+`;
