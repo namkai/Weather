@@ -1,6 +1,6 @@
 import React from 'react';
-import SideBar from '../containers/SideBar';
-import Weather from '../containers/Weather';
+import SideBar from './features/SideBar';
+import Weather from './features/Weather';
 
 export const App = () => (
   <div className="container">
