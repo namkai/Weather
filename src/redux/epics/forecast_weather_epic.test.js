@@ -3,7 +3,7 @@ import nock from 'nock';
 import configureMockStore from 'redux-mock-store';
 import { createEpicMiddleware } from 'redux-observable';
 import { fetchWeather } from '../actions';
-import { FETCH_CURRENT_WEATHER_SUCCESS, FETCH_WEATHER } from '../constants/actionTypes';
+import { FETCH_FORECAST_WEATHER_SUCCESS, FETCH_WEATHER } from '../constants/actionTypes';
 import currentWeatherEpic from './currentWeatherEpic';
 
 const epicMiddleware = createEpicMiddleware(currentWeatherEpic);
@@ -14,12 +14,10 @@ describe('fetchUserEpic', () => {
   beforeEach(() => {
     store = mockStore();
   });
-  
   afterEach(() => {
     nock.cleanAll();
     epicMiddleware.replaceEpic(currentWeatherEpic);
   });
-  
   it('fetches Weather Data', () => {
     store.dispatch(fetchWeather('San Francisco'));
     const responsePayload = [{
@@ -31,7 +29,7 @@ describe('fetchUserEpic', () => {
       .reply(200, responsePayload);
     expect(store.getActions()).toEqual([
       { type: FETCH_WEATHER, payload: 'San Francisco' },
-      { type: FETCH_CURRENT_WEATHER_SUCCESS, responsePayload },
+      { type: FETCH_FORECAST_WEATHER_SUCCESS, responsePayload },
     ]);
   });
 });
