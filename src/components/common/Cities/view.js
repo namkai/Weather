@@ -1,14 +1,20 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import CitiesLayout from './layout';
-import City from '../City';
+import City from '../City/view';
 
 const Cities = ({ storedCities, fetchWeather, clearStoredCities }) => {
   let view = null;
   if (storedCities.length > 0) {
     view = storedCities.map((city, idx) => <City name={city} key={idx} fetchWeather={fetchWeather} />);
   }
-  return <CitiesLayout clearStoredCities={clearStoredCities}>{ view }</CitiesLayout>;
+  return (
+    <ul className="nav nav-pills nav-stacked flex-column">
+      <li className="nav-header">Recent Cities
+        <small> · <a href="#" onClick={clearStoredCities}>Clear</a></small>
+      </li>
+      {view}
+    </ul>
+  );
 };
 
 Cities.defaultProps = {

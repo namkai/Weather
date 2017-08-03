@@ -1,14 +1,13 @@
 import React from 'react';
-import SideBar from './features/SideBar';
-import Weather from './features/Weather';
+import SideBar from '../redux/containers/SideBarContainer';
+import Weather from '../redux/containers/WeatherContainer';
+import DefaultPageLayout from './layouts/DefaultPageLayout';
 
 export const App = () => (
-  <div className="container">
-    <div className="row">
-      <SideBar />
-      <Weather />
-    </div>
-  </div>
+  <DefaultPageLayout>
+    <SideBar />
+    <Weather />
+  </DefaultPageLayout>
 );
 
 export default App;

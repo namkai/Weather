@@ -564,7 +564,7 @@ Color.prototype = {
 
 	clone: function () {
 		// NOTE(SB): using node-clone creates a dependency to Buffer when using browserify,
-		// making the final build way to big to embed in Chart.test.js. So let's do it manually,
+		// making the final build way to big to embed in chart.test.js. So let's do it manually,
 		// assuming that values to clone are 1 dimension arrays containing only numbers,
 		// except 'alpha' which is a number.
 		var result = new Color();
@@ -3854,7 +3854,7 @@ module.exports = function(Chart) {
 		var renderHeight = canvas.getAttribute('height');
 		var renderWidth = canvas.getAttribute('width');
 
-		// Chart.test.js modifies some canvas values that we want to restore on destroy
+		// chart.test.js modifies some canvas values that we want to restore on destroy
 		canvas._chartjs = {
 			initial: {
 				height: renderHeight,
@@ -11165,7 +11165,7 @@ module.exports = function(Chart) {
 	var TimeScale = Chart.Scale.extend({
 		initialize: function() {
 			if (!moment) {
-				throw new Error('Chart.js - Moment.js could not be found! You must include it before Chart.test.js to use the time scale. Download at https://momentjs.com');
+				throw new Error('Chart.js - Moment.js could not be found! You must include it before chart.test.js to use the time scale. Download at https://momentjs.com');
 			}
 
 			Chart.Scale.prototype.initialize.call(this);
@@ -11542,7 +11542,7 @@ module.exports = function(Chart) {
 			}
 			// Custom parsing (return an instance of moment)
 			if (typeof me.options.time.format !== 'string' && me.options.time.format.call) {
-				console.warn('options.time.format is deprecated and replaced by options.time.parser. See http://nnnick.github.io/Chart.test.js/docs-v2/#scales-time-scale');
+				console.warn('options.time.format is deprecated and replaced by options.time.parser. See http://nnnick.github.io/chart.test.js/docs-v2/#scales-time-scale');
 				return me.options.time.format(label);
 			}
 			// Moment format parsing
