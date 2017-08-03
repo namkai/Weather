@@ -1,7 +1,7 @@
 import 'c3/c3.css';
 import PropTypes from 'prop-types';
 import React from 'react';
-import '../../../style/Chart.css';
+import './chart.css';
 
 const Chart = ({ chartType, forecast, updateChartState }) => {
   let chart = null;

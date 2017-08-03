@@ -1,15 +1,11 @@
-import { compose, pure } from 'recompose';
 import { connect } from 'react-redux';
-
-import getWeatherState from '../selectors/getWeatherState';
+import { compose, pure } from 'recompose';
 import Weather from '../../components/features/Weather';
 
-function mapStateToProps(state) {
-  return getWeatherState(state);
-}
+import getWeatherState from '../selectors/getWeatherState';
+
+const mapStateToProps = (state) => getWeatherState(state);
 
 const connectToStore = connect(mapStateToProps);
 
-const PureWeather = pure(Weather);
-
-export default compose(connectToStore)(PureWeather);
+export default compose(connectToStore)(Weather);

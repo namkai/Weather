@@ -1,4 +1,4 @@
-import { compose, lifecycle } from 'recompose';
+import { compose } from 'recompose';
 import { connect } from 'react-redux';
 
 import * as actions from '../actions'
@@ -8,6 +8,5 @@ import SideBar from '../../components/features/SideBar';
 const mapStateToProps = state => getSideBarState(state);
 
 const connectToStore = connect(mapStateToProps, actions);
-
 
 export default compose(connectToStore)(SideBar);
